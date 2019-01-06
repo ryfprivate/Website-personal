@@ -1,4 +1,5 @@
 $(function () {
+    
     // On-click function for link element to the about page
     $(".link--about").on("click", function (e) {
         // Prevents the link from going to another page
