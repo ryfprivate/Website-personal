@@ -1,4 +1,13 @@
-.main-content .card-container {
-  padding-top: 60px;
+body .main-content {
+  height: 100vh;
+  background: grey;
+  padding-top: 70px;
+}
+
+body .main-content .card-container {
+  width: 98vw;
+  margin: 0 auto;
+  background: white;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
