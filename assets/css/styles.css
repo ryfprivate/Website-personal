@@ -4,10 +4,30 @@ body .main-content {
   padding-top: 70px;
 }
 
-body .main-content .card-container {
+body .main-content .card-section {
   width: 98vw;
   margin: 0 auto;
   background: white;
   border-radius: 10px;
+}
+
+body .main-content .card-section__head {
+  border-radius: 10px 10px 0 0;
+  background: black;
+  margin-bottom: -16px;
+}
+
+body .main-content .card-section__head--text {
+  color: white;
+  text-align: center;
+}
+
+body .main-content .card-section__body {
+  border-radius: 0 0 10px 10px;
+  background: red;
+}
+
+body .main-content .card-section__body--text {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
