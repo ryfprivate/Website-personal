@@ -13,7 +13,7 @@ body .main-content .card-section {
 
 body .main-content .card-section__head {
   border-radius: 10px 10px 0 0;
-  background: black;
+  background: #343a40 !important;
   margin-bottom: -16px;
 }
 
@@ -24,7 +24,6 @@ body .main-content .card-section__head--text {
 
 body .main-content .card-section__body {
   border-radius: 0 0 10px 10px;
-  background: red;
 }
 
 body .main-content .card-section__body--text {
