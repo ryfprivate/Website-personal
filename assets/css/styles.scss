@@ -5,6 +5,7 @@ body {
         height: 100vh;
         background: $color-light;
         padding-top: 70px;
+        font-family: 'Montserrat', Helvetica, sans-serif;
         .card-section {
             width: 96vw;
             margin: 0 auto;
@@ -33,9 +34,6 @@ body {
             }
             &__body {
                 border-radius: 0 0 10px 10px;
-                &--text {
-                    text-align: center;
-                }
             }
         }
     }
