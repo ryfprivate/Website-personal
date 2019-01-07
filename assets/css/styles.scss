@@ -1,9 +1,9 @@
-@import "./sass_imports/_color.scss"
+@import "./sass_imports/color";
 
 body {
     .main-content {
         height: 100vh;
-        background: grey;
+        background: $color-light;
         padding-top: 70px;
         .card-section {
             width: 98vw;
@@ -12,10 +12,15 @@ body {
             border-radius: 10px;
             &__head {
                 border-radius: 10px 10px 0 0;
-                background: color-dark;
-                margin-bottom: -16px;
+                background: url("../images/main_bg.png"), $color-dark;
+                &--avatar {
+                    max-width: 200px;
+                }
                 &--text {
                     color: white;
+                    text-align: center;
+                }
+                &--icons {
                     text-align: center;
                 }
             }

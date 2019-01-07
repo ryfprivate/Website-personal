@@ -1,6 +1,6 @@
 body .main-content {
   height: 100vh;
-  background: grey;
+  background: #d6d6d6;
   padding-top: 70px;
 }
 
@@ -13,12 +13,19 @@ body .main-content .card-section {
 
 body .main-content .card-section__head {
   border-radius: 10px 10px 0 0;
-  background: #343a40 !important;
-  margin-bottom: -16px;
+  background: url("../images/main_bg.png"), #343a40 !important;
+}
+
+body .main-content .card-section__head--avatar {
+  max-width: 200px;
 }
 
 body .main-content .card-section__head--text {
   color: white;
+  text-align: center;
+}
+
+body .main-content .card-section__head--icons {
   text-align: center;
 }
 
