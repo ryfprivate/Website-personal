@@ -5,22 +5,29 @@ body {
         height: 100vh;
         background: $color-light;
         padding-top: 70px;
-        font-family: 'Montserrat', Helvetica, sans-serif;
+        font-family: Verdana, Geneva, sans-serif;
         .card-section {
-            width: 96vw;
+            width: 94vw;
+            max-width: 1032px;
             margin: 0 auto;
             background: white;
             border-radius: 10px;
             &__head {
                 border-radius: 10px 10px 0 0;
                 padding: 10px;
-                background: url("../images/main_bg.png") 0% 50%, $color-blue;
+                background-color: $color-blue;
+                background-image: url("../images/sp_main_bg.png");
+                background-size: cover;
+                background-position: center center;
                 &--avatar {
                     max-width: 200px;
                 }
                 &--text {
                     color: white;
                     text-align: center;
+                    h1 {
+                        font-size: 44px;
+                    }
                 }
                 &--icons {
                     text-align: center;
@@ -34,6 +41,7 @@ body {
             }
             &__body {
                 border-radius: 0 0 10px 10px;
+                padding: 10px;
             }
         }
     }

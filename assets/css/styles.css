@@ -2,11 +2,12 @@ body .main-content {
   height: 100vh;
   background: #f5f5f5;
   padding-top: 70px;
-  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 body .main-content .card-section {
-  width: 96vw;
+  width: 94vw;
+  max-width: 1032px;
   margin: 0 auto;
   background: white;
   border-radius: 10px;
@@ -15,7 +16,10 @@ body .main-content .card-section {
 body .main-content .card-section__head {
   border-radius: 10px 10px 0 0;
   padding: 10px;
-  background: url("../images/main_bg.png") 0% 50%, #17a2b8 !important;
+  background-color: #17a2b8 !important;
+  background-image: url("../images/sp_main_bg.png");
+  background-size: cover;
+  background-position: center center;
 }
 
 body .main-content .card-section__head--avatar {
@@ -25,6 +29,10 @@ body .main-content .card-section__head--avatar {
 body .main-content .card-section__head--text {
   color: white;
   text-align: center;
+}
+
+body .main-content .card-section__head--text h1 {
+  font-size: 44px;
 }
 
 body .main-content .card-section__head--icons {
@@ -41,5 +49,6 @@ body .main-content .card-section__head--icons .fa-stack .fa-github, body .main-c
 
 body .main-content .card-section__body {
   border-radius: 0 0 10px 10px;
+  padding: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
