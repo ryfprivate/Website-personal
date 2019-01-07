@@ -1,17 +1,21 @@
 @import "./sass_imports/color";
 
 body {
+    .header {
+        height: 60px;
+    }
     .main-content {
-        height: 100vh;
         background: $color-light;
-        padding-top: 70px;
         font-family: Verdana, Geneva, sans-serif;
+        padding-top: 20px;
+        padding-bottom: 50px;
         .card-section {
             width: 94vw;
             max-width: 1032px;
             margin: 0 auto;
-            background: white;
+            background: $color-light;
             border-radius: 10px;
+            box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
             &__head {
                 border-radius: 10px 10px 0 0;
                 padding: 10px;
@@ -32,13 +36,15 @@ body {
                     }
                 }
                 &--text {
+                    margin-top: 5px;
                     color: white;
                     text-align: center;
                     h1 {
                         font-size: 44px;
+                        font-weight: 700;
                     }
                     p {
-                        margin-top: 20px;
+                        margin-top: 15px;
                     }
                 }
                 &--icons {
@@ -55,7 +61,17 @@ body {
             }
             &__body {
                 border-radius: 0 0 10px 10px;
-                padding: 10px;
+                border: 1px solid $color-grey-light;
+                padding: 25px;
+                &--intro {
+                    h3 {
+                        font-size: 21px;
+                        font-weight: 600;
+                        span {
+                            color: $color-blue;
+                        }
+                    }
+                }
             }
         }
     }
