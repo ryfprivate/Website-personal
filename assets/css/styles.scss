@@ -6,12 +6,13 @@ body {
         background: $color-light;
         padding-top: 70px;
         .card-section {
-            width: 98vw;
+            width: 96vw;
             margin: 0 auto;
             background: white;
             border-radius: 10px;
             &__head {
                 border-radius: 10px 10px 0 0;
+                padding: 10px 10px 10px 10px;
                 background: url("../images/main_bg.png"), $color-dark;
                 &--avatar {
                     max-width: 200px;
@@ -22,6 +23,13 @@ body {
                 }
                 &--icons {
                     text-align: center;
+                    .fa-stack {
+                        border-radius: 100px;
+                        box-shadow: 0px 0px 15px 1px;
+                        .fa-github, .fa-facebook, .fa-linkedin {
+                            color: $color-dark;
+                        }
+                    }
                 }
             }
             &__body {
