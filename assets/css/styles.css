@@ -5,7 +5,7 @@ body .header {
 body .main-content {
   background: #f5f5f5;
   font-family: Verdana, Geneva, sans-serif;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-bottom: 50px;
 }
 
@@ -81,6 +81,35 @@ body .main-content .card-section__body--intro h3 {
 }
 
 body .main-content .card-section__body--intro h3 span {
+  color: #17a2b8 !important;
+}
+
+body .main-content .card-section__body--intro p {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+body .main-content .card-section__body--info {
+  margin-top: 10px;
+}
+
+body .main-content .card-section__body--info .info-list {
+  list-style: none;
+  font-size: 14px;
+}
+
+body .main-content .card-section__body--info .info-list li .title {
+  margin-left: -40px;
+  padding-bottom: 10px;
+  display: inline-block;
+  min-width: 120px;
+}
+
+body .main-content .card-section__body--info .info-list li .value {
+  color: #9e9e9e;
+}
+
+body .main-content .card-section__body--info .info-list li .value a {
   color: #17a2b8 !important;
 }
 /*# sourceMappingURL=styles.css.map */

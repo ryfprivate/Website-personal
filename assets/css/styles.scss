@@ -7,7 +7,7 @@ body {
     .main-content {
         background: $color-light;
         font-family: Verdana, Geneva, sans-serif;
-        padding-top: 20px;
+        padding-top: 12px;
         padding-bottom: 50px;
         .card-section {
             width: 94vw;
@@ -69,6 +69,31 @@ body {
                         font-weight: 600;
                         span {
                             color: $color-blue;
+                        }
+                    }
+                    p {
+                        margin-top: 12px;
+                        font-size: 14px;
+                    }
+                }
+                &--info {
+                    margin-top: 10px;
+                    .info-list {
+                        list-style: none;
+                        font-size: 14px;
+                        li {
+                            .title {
+                                margin-left: -40px;
+                                padding-bottom: 10px;
+                                display: inline-block;
+                                min-width: 120px;
+                            }
+                            .value {
+                                color: $color-grey;
+                                a {
+                                    color: $color-blue;
+                                }
+                            }
                         }
                     }
                 }
