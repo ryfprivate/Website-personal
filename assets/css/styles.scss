@@ -70,7 +70,6 @@ body {
                 border: 1px solid $color-grey-light;
                 padding: 25px;
                 &--intro {
-                    max-width: 480px;
                     h3 {
                         font-size: 21px;
                         font-weight: 600;
@@ -79,7 +78,6 @@ body {
                         }
                     }
                     p {
-                        max-width: 420px;
                         margin-top: 12px;
                         font-size: 14px;
                     }

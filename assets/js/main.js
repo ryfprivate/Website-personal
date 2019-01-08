@@ -16,16 +16,8 @@ $(function () {
     function changeFlex(mQuery) {
         if (mQuery.matches) {
             // If window width is less than specified max-width
-            document.querySelector(".main-content").style.backgroundColor = "yellow";
-            console.log("inner = ", window.innerWidth);
-            console.log("outer = ", window.outerWidth);
-            console.log("screen = ", window.screen.width);
             colLayout();
         } else {
-            document.querySelector(".main-content").style.backgroundColor = "pink";
-            console.log("inner = ", window.innerWidth);
-            console.log("outer = ", window.outerWidth);
-            console.log("screen = ", window.screen.width);
             rowLayout();
         }
     }
@@ -61,6 +53,7 @@ $(function () {
             body_container.classList.add("flex-row");
             body_intro.style.flex = "1";
             body_info.style.flex = "1";
+            document.querySelector(".card-section__body--intro p").style.maxWidth = "440px";
         }
     }
     function callPage(pageRefInput) {
