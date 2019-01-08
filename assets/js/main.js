@@ -4,8 +4,17 @@ $(function () {
     changeFlex(mQuery);
     mQuery.addListener(changeFlex);
 
-    // On-click function for link element to the about page
-    $(".link--about").on("click", function (e) {
+    // On-click function for home link
+    $(".link--index").on("click", function (e) {
+        // Prevents the link from going to another page
+        e.preventDefault();
+        // Finds the link of the particular page
+        var pageRef = $(this).attr("href");
+        callPage(pageRef);
+    });
+
+    // On-click function for resume link
+    $(".link--resume").on("click", function (e) {
         // Prevents the link from going to another page
         e.preventDefault();
         // Finds the link of the particular page
@@ -69,7 +78,7 @@ $(function () {
             // the response is passed to the function
             success: function (response) {
                 console.log("the page was loaded", response);
-                $(".content").html(response);
+                $(".main-content").html(response);
             },
             // Code to run if the request fails; the raw request and
             // status codes are passed to the function
