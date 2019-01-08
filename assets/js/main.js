@@ -39,18 +39,28 @@ $(function () {
         }
     }
     function rowLayout() {
-        var container = document.querySelector(".card-section__head");
-        var avatar = document.querySelector(".card-section__head--avatar");
-        var avatarImg = document.querySelector(".card-section__head--avatar .avatar__img--wrapper");
-        var info = document.querySelector(".card-section__head--info");
+        var head_container = document.querySelector(".card-section__head");
+        var head_avatar = document.querySelector(".card-section__head--avatar");
+        var head_avatarImg = document.querySelector(".card-section__head--avatar .avatar__img--wrapper");
+        var head_info = document.querySelector(".card-section__head--info");
+        var body_container = document.querySelector(".card-section__body");
+        var body_intro = document.querySelector(".card-section__body--intro");
+        var body_info = document.querySelector(".card-section__body--info");
         if (document.querySelector(".card-section__head.flex-column")) {
-            container.classList.remove("flex-column");
-            container.classList.add("flex-row");
-            container.classList.remove("pb-5");
-            info.style.margin = ("auto 0");
-            avatarImg.style.maxWidth = 280+"px";
-            avatar.style.flex = "1";
-            info.style.flex = "2";
+            /* Restructuring format of card-section__head */
+            head_container.classList.remove("flex-column");
+            head_container.classList.add("flex-row");
+            head_container.classList.remove("pb-5");
+            head_avatar.style.flex = "1";
+            head_avatarImg.style.maxWidth = 280+"px";
+            head_info.style.flex = "2";
+            head_info.style.margin = "auto 0";
+            head_info.style.position = "relative";
+            /* Restructuring format of card-section__body */
+            body_container.classList.remove("flex-column");
+            body_container.classList.add("flex-row");
+            body_intro.style.flex = "1";
+            body_info.style.flex = "1";
         }
     }
     function callPage(pageRefInput) {

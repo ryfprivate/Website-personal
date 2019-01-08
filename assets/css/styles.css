@@ -83,6 +83,10 @@ body .main-content .card-section__body {
   padding: 25px;
 }
 
+body .main-content .card-section__body--intro {
+  max-width: 480px;
+}
+
 body .main-content .card-section__body--intro h3 {
   font-size: 21px;
   font-weight: 600;
@@ -93,6 +97,7 @@ body .main-content .card-section__body--intro h3 span {
 }
 
 body .main-content .card-section__body--intro p {
+  max-width: 420px;
   margin-top: 12px;
   font-size: 14px;
 }
