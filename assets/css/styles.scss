@@ -3,11 +3,12 @@
 body {
     .header {
         height: 60px;
+        margin-bottom: -4px;
     }
     .main-content {
         background: $color-light;
         font-family: Verdana, Geneva, sans-serif;
-        padding-top: 12px;
+        padding-top: 16px;
         padding-bottom: 50px;
         .card-section {
             width: 94vw;
@@ -25,8 +26,7 @@ body {
                 background-position: center center;
                 &--avatar {
                     .avatar__img--wrapper {
-                        width: 200px;
-                        height: 200px;
+                        max-width: 200px;
                         margin: 0 auto;
                         border: 3px solid white;
                         .avatar__img {
@@ -35,30 +35,31 @@ body {
                         }
                     }
                 }
-                &--text {
-                    margin-top: 5px;
-                    color: white;
-                    text-align: center;
-                    h1 {
-                        font-size: 44px;
-                        font-weight: 700;
+                &--info {
+                    margin: 5px auto 0 auto;
+                    .text {
+                        color: white;
+                        text-align: center;
+                        h1 {
+                            font-size: 44px;
+                            font-weight: 700;
+                        }
+                        p {
+                            margin-top: 15px;
+                        }
                     }
-                    p {
-                        margin-top: 15px;
-                    }
-                }
-                &--icons {
-                    margin-top: -15px;
-                    text-align: center;
-                    .fa-stack {
-                        border-radius: 100%;
-                        .circle-link {
-                            display: inline-block;
+                    .icons {
+                        text-align: center;
+                        .fa-stack {
                             border-radius: 100%;
-                            width: 100%;
-                            height: 100%;
-                            .fa-github, .fa-facebook, .fa-linkedin  {
-                                color: $color-grey;
+                            .circle-link {
+                                display: inline-block;
+                                border-radius: 100%;
+                                width: 100%;
+                                height: 100%;
+                                .fa-github, .fa-facebook, .fa-linkedin  {
+                                    color: $color-grey;
+                                }
                             }
                         }
                     }
